@@ -1,0 +1,43 @@
+@use '../base/var.scss';
+
+.infobar {
+    padding: 16px 24px;
+    background-color: var.$textColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__infos {
+        display: flex;
+        gap: 60px;
+
+        &__item {
+            font-size: 14px;
+            color: var.$secondaryTextColor;
+
+            span {
+                display: block;
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__infos {
+            display: block;
+
+                &__item {
+                    margin-bottom: 24px;
+                }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__infos {
+            gap: 16px
+        }
+    }
+}

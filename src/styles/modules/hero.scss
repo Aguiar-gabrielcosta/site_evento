@@ -1,0 +1,77 @@
+@use '../base/var.scss';
+
+.hero {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000090;
+        content: '';
+    }
+
+    &__text {
+        margin: 64px 0;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        font-weight: 800;
+        color: var.$textColor;
+        text-align: center;
+    }
+
+    &__scroll-indicator {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        translate: -50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var.$textColor;
+
+        &__text {
+            font-size: 1.125rem;
+        }
+
+        &__svg {
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    @media (max-width: 640px) {
+
+        &__text {
+            font-size: 1.375rem;
+            line-height: 1.5rem;
+            margin: 24px 0;
+        }
+
+        &__scroll-indicator {
+
+            &__text {
+                font-size: 1rem;
+            }
+
+            &__svg {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+}

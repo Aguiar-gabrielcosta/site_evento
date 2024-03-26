@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festa de aniversário</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    
+    <header class="hero">
+        <div class="container">
+            <p class="hero__text">
+                Você está convidado para comemorar meu aniversário <span id="contador"></span>
+            </p>
+            <div class="infobar">
+                <ul class="infobar__infos">
+                    <li class="infobar__infos__item">
+                        <span>Local</span>
+                        Espaço festa - Sacomã - São Paulo
+                    </li>
+                    <li class="infobar__infos__item">
+                        <span>Quando</span>
+                        18/12/2024
+                    </li>
+                    <li class="infobar__infos__item">
+                        <span>Horário</span>
+                        Das 10h às 24h
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirme sua presença
+                </a>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator">
+            <h2 class="hero__scroll-indicator__text">Mais detalhes</h2>
+            <svg class="hero__scroll-indicator__svg" width="100px" height="100px" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" fill="currentcolor">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="currentcolor" stroke-width="0.192">
+                </g>
+                <g id="SVGRepo_iconCarrier">
+                    <title>scroll</title>
+                    <g id="Complete">
+                        <g id="F-Chevron">
+                            <polyline fill="none" id="Down" points="5 8.5 12 15.5 19 8.5" stroke="currentcolor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="0.72"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </header>
+
+    <section class="event event--morning">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Café da manhã</h2>
+                <p class="event__details__text">
+                    Venha começar o dia com um café da manhã reforçado, com direito a pães, frios, panquecas, tapiocas, frios, café, várias opções de suco, entre outras opções no cardápio. Começando às 10h até 11:30h.
+                </p>
+            </div>
+            <img class="event__image" src="images/cafe-da-manha.jpg" alt="Café da manhã americano">
+        </div>
+    </section>
+
+    <section class="event event--afternoon-start event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Tarde de jogos</h2>
+                <p class="event__details__text">
+                    Durante a tarde teremos jogos de tabuleiro e um espaço para conversar e aproveitar petiscos e lanches oferecidos pelo Espaço festa, tudo a vontade. Começando às 13h até 18h.
+                </p>
+            </div>
+            <img class="event__image" src="images/jogos.jpg" alt="Jogos de tabuleiro">
+        </div>
+    </section>
+
+    <section class="event event--afternoon-finish">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Jantar</h2>
+                <p class="event__details__text">
+                    Ao fim da tarde, teremos a famosa hora da pizza. Vários sabores de pizza e bebidas alcóolicas e não alcóolicas. Fique a vontade para comer o quanto quiser. Começando às 18h até 19:30h.
+                </p>
+            </div>
+            <img class="event__image" src="images/jantar.jpg" alt="Jantar">
+        </div>
+    </section>
+
+    <section class="event event--night event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Pista de dança e Karaokê</h2>
+                <p class="event__details__text">
+                    Por fim, terminaremos a noite com a abertura da pista de dança e o Karaokê para a diversão de todos. Além disso durante a festa temos Open Bar. Começando às 20h até 24h. 
+                </p>
+            </div>
+            <img class="event__image" src="images/festa.jpg" alt="Festa">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js" type="module"></script>
+</body>
+</html>
